@@ -96,4 +96,105 @@ This Contract Monthly Claims System (CMCS) allows lecturers to submit claims (by
 - **File Size & Type Limit:** Only files up to a certain file size and of a common file type are allowed to be uploaded for each claim. This may be due to database storage constraints or application settings. 
 - **Database Performance:** Performance could be impacted when large numbers of documents are stored  in the form of byte arrays in the database, especially if the database grows significantly in size.
 
+## References:
+1. Open AI. (2024). ChatGPT (GPT 4.o) [Large Language Model](https://chatgpt.com/)
+
+
+# UML Class Diagram:
+![ST10266848_PROG6212_Part_1_UML_Class_Diagram](https://github.com/user-attachments/assets/07ead0be-f20d-41d8-92ac-f5de4b83ee42)
+
+
+# Project Plan:
+## 1. Project Phases
+1. Phase 1: Planning and Requirements Gathering
+2. Phase 2: System Design
+3. Phase 3: Development
+4. Phase 4: Testing
+5. Phase 5: Deployment
+6. Phase 6: Documentation and Handover
+
+## 2. Tasks, Dependencies, and Timeline
+### Phase 1: Planning and Requirements Gathering
+- **Task 1.1:** Define Requirements (2 days)
+     - Identify user needs, key features, and technical requirements, by consulting the POE document          and lecturer.
+     - **Dependency**: None.
+- **Task 1.2:** Set Up Development Environment (1 day)
+    - Install necessary tools such as:
+        - Visual Studio - for MVC web app development with ASP.NET Core and C#.
+        - SQL Server - for the hosting of the CMCS database
+        - **Dependency**: Completion of Task 1.1.
+**Total Time:** 3 days
+---
+### Phase 2: System Design
+- **Task 2.1:** Design Database Schema (2 days)
+     - Design tables, relationships, and data types for storing user data, claims and supporting              documents. This can  be done by drawing a UML Class Diagram and an ERD.
+     - **Dependency:** Completion of Phase 1.
+- **Task 2.2:** Design Application Architecture (3 days)
+     - Define the MVC structure, including models (one for each type of user and one for Claims),             views, and controllers (one for each model)
+     - **Dependency:** Completion of Task 2.1.
+- **Task 2.3:** Design User Interface Mockups (2 days)
+     - Create mockups for the GUI layout (each wireframe representing a view, such 'Claims', 'Submit A        Claim' and 'Manage Lecturer')
+     - **Dependency:** Completion of Task 2.2.
+**Total Time:** 7 days
+---
+### Phase 3: Development
+- **Task 3.1:** Implement Database (2 days)
+     - Create the database for the CMCS app and implement the predefined schema.
+     - **Dependency:** Completion of Phase 2.
+- **Task 3.2:** Develop Models (3 days)
+     - Implement the models to handle data for Claims, making provisions for storage of documents and         ensuring documents are linked to the corresponding claims
+     - **Dependency:** Completion of Task 3.1.
+- **Task 3.3:** Develop Controllers (5 days)
+     - Implement the controllers (one for each: Claims, Lecturers, Coordinators, Managers and HR) to          manage interactions between the user interface and the models.
+     - **Dependency:** Completion of Task 3.2.
+- **Task 3.4:** Develop Views (5 days)
+     - Implement the user interface, by including forms for registering users, submitting and                 displaying claims, as well as managing Lecturers.
+- **Task 3.5:** Implement a File Size Limit (1 day)
+      - Implement a control that limits the size of an uploaded file to a specific value in kilobytes.
+      - **Dependency:** Completion of Task 3.4.
+- **Task 3.6:** Implement a Common File Type Restriction (1 day)
+     - Implement a functionality that prevents the lecturer from uploading documents in a unsupported         format that cannot be stored in the database easier. Allow formats such as pdfs, docx or xls.
+     - **Dependency:** Completion of Task 3.5.
+**Total Time:** 17 days
+---
+### Phase 4: Testing
+- **Task 4.1:** Unit Testing (3 days)
+      - Test individual components (each model and each controller) to ensure they work as expected.         - To name a few features to test: test whether submitting a claim, displaying claims, approving          or rejecting claims, managing lecturers and generating reports work properly.
+      - **Dependency:** Completion of Phase 3.
+  **Total Time:** 3 days
   
+  ---
+  ### Phase 5: Deployment
+  - **Task 5.1:** Prepare Deployment Environment (1 days)
+        - Set up the GitHub repository for deploying the application.
+        - **Dependency:** Completion of Phase 4.
+  - **Task 5.2:** Deploy the Application (1 day)
+        - Push the app to the GitHub repository and perform the final checks.
+        - **Dependency:** Completion of Task 5.1.
+**Total Time: 2 days**
+---
+### Phase 6: Documentation and Handover
+- **Task 6.1:** Write User Documentation (3 days)
+      - Create documentation that explains how to use the app, for lecturers.
+      - **Dependency:** Completion of Phase 5.
+- **Task 6.2:** Write Technical Documentation (3 days)
+      - Document the database, architecture, and deployment or pushing steps, for future reference or          development or maintanence.
+      - **Dependency:** Completion of Task 6.1.
+- **Task 6.3:** Handover and Training (2 days)
+      - Provide training or a handover session for the lecturers, coordinators, managers and HR staff          and any other stakeholers.
+      - **Dependency:** Completion of Task 6.2.
+**Total Time:** 8 days
+---
+## Summary Timeline
+- **Phase 1: Planning and Requirements Gathering:** 3 days
+- **Phase 2: System Design:** 7 days
+- **Phase 3: Development:** 17 days
+- **Phase 4: Testing:** 8 days
+- **Phase 5: Deployment:** 2 days
+- **Phase 6: Documentation and Handover:** 8 days
+**Total Project Duration:** 40 days (approximately 6 weeks)
+  
+    
+
+  
+
