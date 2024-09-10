@@ -193,8 +193,10 @@ This Contract Monthly Claims System (CMCS) allows lecturers to submit claims (by
 - **Phase 5: Deployment:** 2 days
 - **Phase 6: Documentation and Handover:** 8 days
 **Total Project Duration:** 40 days (approximately 6 weeks)
-  
-    
+
+# Commits:
+![image](https://github.com/user-attachments/assets/780543d0-0255-428e-96d8-cd617074613f)
+
 
   
 
