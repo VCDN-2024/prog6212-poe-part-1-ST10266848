@@ -11,3 +11,7 @@
 ![PC and AM Home Page](https://github.com/user-attachments/assets/13c289b9-f5f8-45e6-9946-49c7805ea1da)
 
 ![HR Home Page](https://github.com/user-attachments/assets/aecf54f7-f2d7-42cf-a16e-3ea30c2cc2e2)
+
+![Lecturer Claims Page](https://github.com/user-attachments/assets/f44e18e2-eb61-4c01-9d2d-90d7bad65ec5)
+
+![Submit a Claim Page](https://github.com/user-attachments/assets/0d41d0e1-005b-44bc-8e2d-6e1a24768b29)
